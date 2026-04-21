@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Share your feedback on Smoking Awareness BW — help us improve our smoking prevention website.">
+  <meta name="author" content="Smoking Awareness BW">
+  <meta name="keywords" content="smoking, tobacco, health, awareness, Botswana, quit smoking">
+  <title>Feedback | Smoking Awareness BW</title>
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><span>🚭</span>Smoking Awareness BW</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Smoking Products</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="smoking-products.html#cigarettes">Cigarettes</a></li>
+    <li><a class="dropdown-item" href="smoking-products.html#cigars">Cigars</a></li>
+    <li><a class="dropdown-item" href="smoking-products.html#vapes">Vapes / E-cigarettes</a></li>
+    <li><a class="dropdown-item" href="smoking-products.html#hookah">Hookah / Hubbly</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="health-risks.html#passive">Passive Smoking</a></li>
+  </ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="why-people-start.html">Why People Start</a></li>
+<li class="nav-item"><a class="nav-link" href="health-risks.html">Health Risks</a></li>
+<li class="nav-item"><a class="nav-link" href="how-to-quit.html">How to Quit</a></li>
+<li class="nav-item"><a class="nav-link" href="for-parents.html">For Parents</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+<li class="nav-item"><a class="nav-link btn-feedback" href="feedback.html">Feedback</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main id="main-content">
+
+<section class="hero-section" aria-labelledby="feedback-heading">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="hero-tag">Your Input Matters</div>
+        <h1 id="feedback-heading">Share Your Feedback</h1>
+        <p>Help us improve this website. Your input is anonymous and takes less than 2 minutes. All fields marked with <strong>*</strong> are required.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="feedback-form-heading">
+  <div class="container">
+    <div id="form-alert" class="alert" style="display:none" role="alert" aria-live="polite"></div>
+
+    <form id="feedback-form" novalidate aria-label="User feedback form">
+
+      <!-- ABOUT YOU -->
+      <div class="row g-4 mb-4">
+        <div class="col-12">
+          <h2 id="feedback-form-heading" class="section-title" style="font-size:1.3rem">About You</h2>
+        </div>
+        <div class="col-md-6">
+          <label for="age-group" class="form-label">Age Group <span class="text-danger">*</span></label>
+          <select class="form-select" id="age-group" name="age_group" required aria-required="true">
+            <option value="" disabled selected>Select your age range...</option>
+            <option value="15-24">15–24 years</option>
+            <option value="25-35">25–35 years</option>
+            <option value="36-45">36–45 years</option>
+            <option value="46-55">46–55 years</option>
+          </select>
+          <div class="invalid-feedback">Please select your age group.</div>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label d-block">I am a... <span class="text-danger">*</span></label>
+          <div class="d-flex flex-column gap-2">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="user_type" id="type-student" value="student" required>
+              <label class="form-check-label" for="type-student">Student / Young person</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="user_type" id="type-parent" value="parent">
+              <label class="form-check-label" for="type-parent">Parent or guardian</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="user_type" id="type-teacher" value="teacher">
+              <label class="form-check-label" for="type-teacher">Teacher / Educator</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="user_type" id="type-health" value="healthcare">
+              <label class="form-check-label" for="type-health">Healthcare worker</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="user_type" id="type-smoker" value="smoker">
+              <label class="form-check-label" for="type-smoker">Adult smoker seeking help</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="user_type" id="type-other" value="other">
+              <label class="form-check-label" for="type-other">Other</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-4">
+
+      <!-- RATING -->
+      <div class="row g-4 mb-4">
+        <div class="col-12">
+          <h3 class="section-title" style="font-size:1.3rem">Website Rating</h3>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label d-block">Overall Rating <span class="text-danger">*</span></label>
+          <div class="star-rating" id="star-group" role="group" aria-label="Star rating">
+            <input type="radio" name="rating" id="star5" value="5" required>
+            <label for="star5" title="5 stars">★</label>
+            <input type="radio" name="rating" id="star4" value="4">
+            <label for="star4" title="4 stars">★</label>
+            <input type="radio" name="rating" id="star3" value="3">
+            <label for="star3" title="3 stars">★</label>
+            <input type="radio" name="rating" id="star2" value="2">
+            <label for="star2" title="2 stars">★</label>
+            <input type="radio" name="rating" id="star1" value="1">
+            <label for="star1" title="1 star">★</label>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="useful-section" class="form-label">Most Useful Section <span class="text-danger">*</span></label>
+          <select class="form-select" id="useful-section" name="useful_section" required aria-required="true">
+            <option value="" disabled selected>Select a page...</option>
+            <option value="products">Smoking Products</option>
+            <option value="why">Why People Start</option>
+            <option value="risks">Health Risks</option>
+            <option value="quit">How to Quit</option>
+            <option value="parents">For Parents</option>
+          </select>
+          <div class="invalid-feedback">Please select a section.</div>
+        </div>
+        <div class="col-12">
+          <label class="form-label d-block">Pages Visited (select all that apply)</label>
+          <div class="d-flex flex-wrap gap-3">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="visit-products" name="visited" value="products">
+              <label class="form-check-label" for="visit-products">Smoking Products</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="visit-why" name="visited" value="why">
+              <label class="form-check-label" for="visit-why">Why People Start</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="visit-risks" name="visited" value="risks">
+              <label class="form-check-label" for="visit-risks">Health Risks</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="visit-quit" name="visited" value="quit">
+              <label class="form-check-label" for="visit-quit">How to Quit</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="visit-parents" name="visited" value="parents">
+              <label class="form-check-label" for="visit-parents">For Parents</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-4">
+
+      <!-- COMMENTS -->
+      <div class="row g-4">
+        <div class="col-12">
+          <h3 class="section-title" style="font-size:1.3rem">Your Thoughts</h3>
+        </div>
+        <div class="col-12">
+          <label for="helpful" class="form-label">What did you find most helpful? <span class="text-danger">*</span></label>
+          <textarea class="form-control" id="helpful" name="helpful" rows="3" placeholder="Tell us what worked well for you..." required aria-required="true"></textarea>
+          <div class="invalid-feedback">Please share what you found helpful.</div>
+        </div>
+        <div class="col-12">
+          <label for="improve" class="form-label">What could be improved? <span class="text-danger">*</span></label>
+          <textarea class="form-control" id="improve" name="improve" rows="3" placeholder="Any suggestions for improvement..." required aria-required="true"></textarea>
+          <div class="invalid-feedback">Please share your suggestions.</div>
+        </div>
+        <div class="col-12">
+          <label for="other" class="form-label">Any other comments? <small class="text-muted">(Optional)</small></label>
+          <textarea class="form-control" id="other" name="other" rows="2" placeholder="Anything else you'd like to add..."></textarea>
+        </div>
+        <div class="col-12 d-flex gap-3 flex-wrap align-items-center">
+          <button type="submit" class="btn-primary">Submit Feedback</button>
+          <button type="reset" class="btn btn-outline-secondary btn-sm">Clear Form</button>
+          <small class="text-muted">* Anonymous submission — your data is not stored.</small>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="footer-brand"><span>🚭</span>Smoking Awareness BW</div>
+        <p class="footer-desc">An educational platform dedicated to raising awareness about smoking, its health risks, and support for quitting — for all Batswana.</p>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h6 class="footer-heading">Pages</h6>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="smoking-products.html">Smoking Products</a></li>
+          <li><a href="why-people-start.html">Why People Start</a></li>
+          <li><a href="health-risks.html">Health Risks</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h6 class="footer-heading">Support</h6>
+        <ul class="footer-links">
+          <li><a href="how-to-quit.html">How to Quit</a></li>
+          <li><a href="for-parents.html">For Parents</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h6 class="footer-heading">Get Help Now</h6>
+        <p style="font-size:12px;color:rgba(255,255,255,0.6)">If you or someone you know needs help quitting, reach out to a healthcare professional or call a quit-smoking helpline today.</p>
+        <a href="how-to-quit.html" class="btn-primary-white mt-2" style="font-size:11px;padding:8px 18px">Quit Smoking Guide →</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Smoking Awareness BW. All rights reserved.</span>
+      <span>Built with HTML5, CSS3, Bootstrap 5 &amp; JavaScript</span>
+    </div>
+  </div>
+</footer>
+<button id="back-to-top" aria-label="Back to top">↑</button>
+
+<!-- Bootstrap 5 JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- External JS -->
+<script src="js/main.js"></script>
+</body>
+</html>
